@@ -2,9 +2,9 @@ import tinify
 import os
 import os.path
 
-tinify.key = "Jp0V-TmAcz3T31zfyA-lm_HAwuMOKFgM"
-fromFilePath = "/Users/tangjr/Desktop/test1"
-toFilePath = "/Users/tangjr/Desktop/test2"
+tinify.key = "your AppKey" # AppKey
+fromFilePath = "/Users/tangjr/Desktop/test1" # 源路径
+toFilePath = "/Users/tangjr/Desktop/test2" # 输出路径
 
 for root, dirs, files in os.walk(fromFilePath):
 	for name in files:
