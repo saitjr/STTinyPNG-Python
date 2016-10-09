@@ -17,9 +17,6 @@ for root, dirs, files in os.walk(fromFilePath):
 				pass
 			else:
 				os.mkdir(toFullPath)
-
-			source = tinify.from_file(root + '/' + name)
-			source.to_file(toFullName)
 			
 			with open(toFullName, 'rb') as source:
 			    source_data = source.read()
